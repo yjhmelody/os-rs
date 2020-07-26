@@ -2,9 +2,9 @@
 //!
 //!
 
-mod timer;
 mod context;
 mod handler;
+mod timer;
 
 /// 初始化中断相关的子模块
 ///
@@ -13,6 +13,6 @@ mod handler;
 pub fn init() {
     handler::init();
     timer::init();
-    
+
     println!("mod interrupt initialized");
 }
